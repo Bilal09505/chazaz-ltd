@@ -1,0 +1,58 @@
+<nav class="bg-dark border-b border-white/10 fixed w-full z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-2">
+      <span class="text-3xl md:text-4xl font-bold text-primary">CHAZAZ</span>
+      <span class="text-lg text-gray-400">LTD</span>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="hidden md:flex items-center gap-8 text-lg">
+      <a routerLink="/" routerLinkActive="text-primary" class="hover:text-primary transition">Home</a>
+      <a routerLink="/about" routerLinkActive="text-primary" class="hover:text-primary transition">About</a>
+      <a routerLink="/services" routerLinkActive="text-primary" class="hover:text-primary transition">Services</a>
+      <a routerLink="/contact" routerLinkActive="text-primary" class="hover:text-primary transition">Contact</a>
+    </div>
+
+    <!-- RIGHT SIDE (CTA + BURGER) -->
+    <div class="flex items-center gap-4">
+
+      <!-- LOGIN BUTTON -->
+      <a routerLink="/login"
+         class="hidden md:inline-block bg-primary hover:bg-blue-600 text-white px-6 py-2 rounded-xl font-medium transition">
+        Login
+      </a>
+
+      <!-- BURGER BUTTON -->
+      <button (click)="toggleMenu()"
+              class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path *ngIf="!isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+          <path *ngIf="isMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div *ngIf="isMenuOpen"
+       class="md:hidden bg-dark border-t border-white/10 px-6 pb-6 space-y-4 text-lg">
+
+    <a routerLink="/" (click)="toggleMenu()" class="block hover:text-primary">Home</a>
+    <a routerLink="/about" (click)="toggleMenu()" class="block hover:text-primary">About</a>
+    <a routerLink="/services" (click)="toggleMenu()" class="block hover:text-primary">Services</a>
+    <a routerLink="/contact" (click)="toggleMenu()" class="block hover:text-primary">Contact</a>
+
+    <!-- MOBILE LOGIN -->
+    <a routerLink="/login"
+       class="block text-center bg-primary hover:bg-blue-600 text-white px-6 py-3 rounded-xl mt-4">
+      Login
+    </a>
+
+  </div>
+</nav>
