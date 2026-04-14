@@ -1,27 +1,71 @@
-<footer class="bg-black py-16 border-t border-white/10">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <p class="text-4xl font-bold text-primary mb-3">CHAZAZ LTD</p>
-    <p class="text-gray-400 text-lg">SIA Licensed Security Staffing Solutions</p>
-    
-    <div class="mt-10 grid md:grid-cols-3 gap-8 text-left max-w-4xl mx-auto">
+<footer class="bg-black border-t border-white/10 text-white">
+
+  <div class="max-w-7xl mx-auto px-6 py-16">
+
+    <!-- TOP SECTION -->
+    <div class="grid md:grid-cols-4 gap-10 text-left">
+
+      <!-- BRAND -->
       <div>
-        <h4 class="font-semibold mb-3">Contact</h4>
-        <p class="text-gray-400">info@chazaz.co.uk</p>
-        <p class="text-gray-400">+44 7873 933016</p>
+        <h2 class="text-3xl font-bold text-primary mb-3">CHAZAZ LTD</h2>
+        <p class="text-gray-400">
+          SIA Licensed Security Staffing Solutions across the UK.
+        </p>
+
+        <!-- VERSION TAG -->
+        <div class="mt-4 inline-block bg-white/5 border border-white/10 text-xs px-3 py-1 rounded-full text-gray-400">
+          Version {{ currentVersion }}
+        </div>
       </div>
+
+      <!-- QUICK LINKS -->
       <div>
-        <h4 class="font-semibold mb-3">Coverage</h4>
-        <p class="text-gray-400">United Kingdom Wide</p>
+        <h4 class="font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a routerLink="/" class="hover:text-primary transition">Home</a></li>
+          <li><a routerLink="/about" class="hover:text-primary transition">About</a></li>
+          <li><a routerLink="/services" class="hover:text-primary transition">Services</a></li>
+          <li><a routerLink="/contact" class="hover:text-primary transition">Contact</a></li>
+        </ul>
       </div>
+
+      <!-- CONTACT -->
       <div>
-        <h4 class="font-semibold mb-3">Insurance</h4>
-        <p class="text-gray-400">£5M Public Liability</p>
-        <p class="text-gray-400">£10M Employers Liability</p>
+        <h4 class="font-semibold mb-4">Contact</h4>
+        <div class="space-y-2 text-gray-400">
+          <a href="mailto:info@chazaz.co.uk" class="block hover:text-primary transition">
+            ✉️ info@chazaz.co.uk
+          </a>
+          <a href="tel:+447873933016" class="block hover:text-primary transition">
+            📞 +44 7873 933016
+          </a>
+        </div>
       </div>
+
+      <!-- TRUST -->
+      <div>
+        <h4 class="font-semibold mb-4">Trust & Coverage</h4>
+        <div class="space-y-2 text-gray-400">
+          <p>🇬🇧 UK Wide Coverage</p>
+          <p>🛡️ £5M Public Liability</p>
+          <p>📜 £10M Employers Liability</p>
+        </div>
+      </div>
+
     </div>
 
-    <p class="mt-16 text-sm text-gray-500">
-      © 2026 Chazaz Ltd • All Rights Reserved
-    </p>
+    <!-- DIVIDER -->
+    <div class="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+
+      <p>
+        © 2026 Chazaz Ltd. All rights reserved.
+      </p>
+
+      <p class="mt-2 md:mt-0">
+        Built for reliability & security.
+      </p>
+
+    </div>
+
   </div>
 </footer>
