@@ -1,0 +1,29 @@
+[debug] [2026-04-14T03:10:15.510Z] ----------------------------------------------------------------------
+[debug] [2026-04-14T03:10:15.515Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Bilal Hassan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2026-04-14T03:10:15.515Z] CLI Version:   15.8.0
+[debug] [2026-04-14T03:10:15.515Z] Platform:      win32
+[debug] [2026-04-14T03:10:15.516Z] Node Version:  v22.18.0
+[debug] [2026-04-14T03:10:15.516Z] Time:          Tue Apr 14 2026 08:10:15 GMT+0500 (Pakistan Standard Time)
+[debug] [2026-04-14T03:10:15.516Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-14T03:10:15.774Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-14T03:10:15.775Z] > authorizing via signed-in user (mc180406267@gmail.com)
+[debug] [2026-04-14T03:10:15.777Z] Checked if tokens are valid: false, expires at: 1776067011506
+[debug] [2026-04-14T03:10:15.777Z] Checked if tokens are valid: false, expires at: 1776067011506
+[debug] [2026-04-14T03:10:15.777Z] > refreshing access token with scopes: []
+[debug] [2026-04-14T03:10:15.779Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-14T03:10:15.779Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-14T03:10:21.152Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-14T03:10:21.153Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-14T03:10:21.171Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-04-14T03:10:29.180Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-04-14T03:10:29.180Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+[info] Created alias y for chazaz-ltd-store.
+[info] Now using alias y (chazaz-ltd-store)
+[debug] [2026-04-14T03:10:48.455Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Bilal Hassan\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:308:49)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+[error] 
+[error] Error: An unexpected error has occurred.
