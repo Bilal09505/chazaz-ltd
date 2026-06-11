@@ -24,7 +24,7 @@ export class App {
     this.title.setTitle('Chazaz Ltd - Professional Security Services in the UK');
 
     this.meta.addTags([
-      { name: 'description', content: 'Chazaz Ltd provides professional security guards and security services across the UK. Reliable, trained personnel for businesses, events, and properties.' },
+      { name: 'description', content: 'Chazaz Ltd is a UK-registered security company based in Wembley, London. SIA licensed security guards, door supervision, close protection and static guarding across the UK.' },
       { name: 'keywords', content: 'security company UK, security guards UK, professional security services, event security, property security, Chazaz Ltd' },
       { property: 'og:title', content: 'Chazaz Ltd - Professional Security Services in the UK' },
       { property: 'og:description', content: 'Chazaz Ltd provides professional security guards and security services across the UK. Reliable, trained personnel for businesses, events, and properties.' },
